@@ -4,7 +4,6 @@ public class Test {
 
 	public static void main(String[] args) {
 		Member m1 = new Member("Lionel Messi", 35, "http://xyz.com");
-		System.out.println(m1);
 		Member m2 = new Member("Lionel Messi", 35, "http://xyz.com");
 
 		
