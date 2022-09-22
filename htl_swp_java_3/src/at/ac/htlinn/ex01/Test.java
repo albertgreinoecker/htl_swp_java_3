@@ -6,6 +6,8 @@ public class Test {
 		Member m1 = new Member("Lionel Messi", 35, "http://xyz.com");
 		Member m2 = new Member("Lionel Messi", 35, "http://xyz.com");
 
+		System.out.println(m1);
+		System.out.println(m2);
 		
 		Trainer t1 = new Trainer("Philipp Sagmeister", 16, "http://xyz.com", "Chief Trainer");
 		System.out.println(t1);
