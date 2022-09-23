@@ -8,7 +8,7 @@ public class Test {
 
 		System.out.println(m1);
 		System.out.println(m2);
-		
+		System.out.println("chnges made!!");
 		Trainer t1 = new Trainer("Philipp Sagmeister", 16, "http://xyz.com", "Chief Trainer");
 		System.out.println(t1);
 	
