@@ -71,6 +71,17 @@ public class Playground {
 	public boolean finished()
 	{
 		return false;
-		
+	}
+	
+	@Override
+	public String toString() {
+		String s = "";
+		for (int i = 0; i < cards.length; i++) {
+			for (int j = 0; j < cards[i].length; j++) {
+				s += String.format("%s|" , cards[i][j]);
+			}
+			s += "\n";
+		}
+		return s;
 	}
 }

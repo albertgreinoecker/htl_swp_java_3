@@ -6,4 +6,9 @@ public class RegularCard extends Card {
 	public RegularCard(int value) {
 		this.value = value;
 	}
+	
+	@Override
+	public String toString() {
+		return value + super.toString();
+	}
 }
