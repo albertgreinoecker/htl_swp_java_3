@@ -1,13 +1,12 @@
 package at.ac.htlinn.ex02_memory;
 
-import java.util.Iterator;
-
 public class Playground {
 	private Card[][] cards; //(0,0) links oben
 	private int whosOnTurn; //0..Spieler 1, 1...Spieler2, ...
 	private int[] score; //Die Anzahl der Paerchen pro Spieler
 	private int nrJoker;
 	private int nrPairs;
+
 
 	/**
 	 * @param x Groesse in x-Richtung
@@ -83,5 +82,31 @@ public class Playground {
 			s += "\n";
 		}
 		return s;
+	}
+	
+	public void ausgabe()
+	{
+		System.out.printf("%3s", "");
+		for (int i = 0; i < cards[0].length; i++) {
+			System.out.printf("%2d", i);
+		}
+		System.out.println();
+		for (int i = 0; i < cards.length; i++) {
+			System.out.printf("%d : ", i);
+			for (int j = 0; j < cards[i].length; j++) 
+			{
+				Card c = cards[i][j];
+				if (c.visible)
+				{
+					c.ausgabe();
+				} else
+				{
+					System.out.print("*");
+				}
+				System.out.print("|");
+			}
+			
+			System.out.println();
+		}
 	}
 }

@@ -7,8 +7,17 @@ public class RegularCard extends Card {
 		this.value = value;
 	}
 	
+	public int getValue() {
+		return value;
+	}
+
 	@Override
 	public String toString() {
 		return value + super.toString();
+	}
+	
+	public void ausgabe()
+	{
+		System.out.print(value);
 	}
 }

@@ -6,4 +6,9 @@ public class EmptyCard extends Card {
 		
 		return "E" + super.toString();
 	}
+	
+	public void ausgabe()
+	{
+		System.out.print("E");
+	}
 }
