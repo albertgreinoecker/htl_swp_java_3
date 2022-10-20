@@ -69,7 +69,12 @@ public class Playground {
 	 */
 	public boolean finished()
 	{
-		return false;
+		int p = 0; //Gesamtzahl der aufgedeckten Paare
+		for (int s : this.score)
+		{
+			p += s;
+		}
+		return nrPairs == p;
 	}
 	
 	@Override
