@@ -57,9 +57,9 @@ public class Playground {
 	/**
 	 * @return Die Karte die aufgedeckt wurde
 	 */
-	public Card play()
+	public Card play(int x, int y)
 	{
-		return null;
+		return cards[x][y];
 		
 	}
 	
