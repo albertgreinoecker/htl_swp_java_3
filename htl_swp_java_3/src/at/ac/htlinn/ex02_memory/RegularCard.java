@@ -20,4 +20,12 @@ public class RegularCard extends Card {
 	{
 		System.out.print(value);
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof RegularCard)) return false;
+		
+		RegularCard rc = (RegularCard)obj;
+		return rc.value == value;
+	}
 }
