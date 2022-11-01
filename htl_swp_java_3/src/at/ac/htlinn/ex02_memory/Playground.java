@@ -77,6 +77,16 @@ public class Playground {
 		return nrPairs == p;
 	}
 	
+	public void nextPlayer()
+	{
+		whosOnTurn = (whosOnTurn + 1) % score.length;
+	}
+	
+	public int getPlayer()
+	{
+		return whosOnTurn;
+	}
+	
 	@Override
 	public String toString() {
 		String s = "";
