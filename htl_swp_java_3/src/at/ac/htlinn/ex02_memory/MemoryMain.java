@@ -16,6 +16,8 @@ public class MemoryMain {
 		if (x == last_x && y == last_y) {
 			return null;
 		}
+		last_x = x;
+		last_y = y;
 		return p.play(x, y);
 	}
 
