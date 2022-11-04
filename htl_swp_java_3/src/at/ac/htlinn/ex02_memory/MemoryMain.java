@@ -22,7 +22,7 @@ public class MemoryMain {
 	}
 
 	public static void main(String[] args) {
-		Playground p = new Playground(5, 5, 0, 10, 2);
+		Playground p = new Playground(5, 5, 10, 2);
 		System.out.println(p);
 		System.out.println();
 		
@@ -46,6 +46,7 @@ public class MemoryMain {
 				if (c2 instanceof EmptyCard)
 				{
 					System.out.println("Leider eine Empty Card erwischt!");
+					p.nextPlayer();
 				}
 				else if (c1.equals(c2)) {
 					c1.setVisible(true);

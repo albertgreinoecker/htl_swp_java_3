@@ -4,19 +4,16 @@ public class Playground {
 	private Card[][] cards; //(0,0) links oben
 	private int whosOnTurn; //0..Spieler 1, 1...Spieler2, ...
 	private int[] score; //Die Anzahl der Paerchen pro Spieler
-	private int nrJoker;
 	private int nrPairs;
 
 
 	/**
 	 * @param x Groesse in x-Richtung
 	 * @param y Groesse in y-Richtung
-	 * @param nrJoker Anzahl der Jokerkarten
 	 * @param nrPairs Anzahl der zu erzeugenden Paare
 	 * @param nrPlayers wie viele Spieler nehmen Teil
 	 */
-	public Playground(int x, int y,  int nrJoker, int nrPairs, int nrPlayers) {
-		this.nrJoker = nrJoker;
+	public Playground(int x, int y, int nrPairs, int nrPlayers) {
 		this.nrPairs = nrPairs;
 		score = new int[nrPlayers];
 		cards = new Card[x][y];
