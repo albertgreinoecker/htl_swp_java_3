@@ -19,6 +19,11 @@ public class Team {
 	public String toString() {
 		String s = this.name  + "\n" ;
 		for (Member member : members) {
+			if (member instanceof Player)
+			{
+				System.out.println("Ist ein Player");
+			}
+				System.out.println("Spieler");
 			s += "\t" + member + "\n";
 		}
 		return s;

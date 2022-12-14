@@ -2,10 +2,12 @@ package at.ac.htlinn.junit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -51,13 +53,21 @@ class MoneyTest {
 	}
 	@Test
 	void testAddDifferentCurrency() {
-		Money m3 = m1.add(m2);
+		Money m10 = new Money("EUR", 10);
+		Money m11 = new Money("USD", 20);
+		Money m3 = m10.add(m11);
 		assertNull(m3);
 
 		Money m4 = new Money("USD", 10);
 		Money m5 = new Money("EUR", 20);		
 		Money m6 = m4.add(m5);
 		assertNull(m6);
+		
+	}
+	
+	@RepeatedTest(10)
+	void testrepeat() {
+		Assert.fail("just showing that repeat works");
 		
 	}
 
