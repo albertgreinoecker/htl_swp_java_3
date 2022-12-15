@@ -3,6 +3,14 @@ package at.ac.htlinn.ex02_memory;
 public abstract class Card {
 	protected boolean visible;
 
+	public Card() {
+	}
+	
+	public Card(boolean visible)
+	{
+		this.visible = visible;
+	}
+	
 	public boolean isVisible() {
 		return visible;
 	}

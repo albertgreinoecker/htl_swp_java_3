@@ -20,6 +20,10 @@ public class Playground {
 		init();
 	}
 	
+	public Playground(int x, int y) {
+		cards = new Card[x][y];
+	}
+
 	/**
 	 * Erzeuge zufaellig ein mit Karten besetztes Spielfeld
 	 */
@@ -58,6 +62,18 @@ public class Playground {
 	{
 		return cards[x][y];
 		
+	}
+	
+	public boolean isPair(int x1, int  y1, int x2, int y2)
+	{
+		Card c1 = get(x1, y1);
+		Card c2 = get(x2, y2);
+		
+		if (c1 instanceof RegularCard && c2 instanceof RegularCard)
+		{
+			return c1.equals(c2);
+		}
+		return false;
 	}
 	
 	/**
@@ -120,5 +136,15 @@ public class Playground {
 			
 			System.out.println();
 		}
+	}
+	
+	public Card get(int x, int y)
+	{
+		return cards[x][y];
+	}
+	
+	public void set(int x, int y, Card c)
+	{
+		cards[x][y] = c;
 	}
 }
