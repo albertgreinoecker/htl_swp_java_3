@@ -46,7 +46,6 @@ class PlaygroundTest {
 					{
 						cnt++;
 					}
-						
 				}
 			}			
 		}
@@ -62,7 +61,7 @@ class PlaygroundTest {
 		System.out.println(p);
 		for (int i = 0; i < noPairs;i++)
 		{
-			Assert.assertEquals(cnt(p,i,sizeX, sizeY),2);
+			assertEquals(cnt(p,i,sizeX, sizeY),2);
 		}
 	}
 
@@ -76,8 +75,8 @@ class PlaygroundTest {
 			e.printStackTrace();
 		}
 		System.out.println(p);
-		Assert.assertTrue(p.isPair(1, 0, 1, 1));
-		Assert.assertFalse(p.isPair(0, 0, 0, 1));
-		Assert.assertFalse(p.isPair(0, 2, 0, 1));
+		assertTrue(p.isPair(1, 0, 1, 1));
+		assertFalse(p.isPair(0, 0, 0, 1));
+		assertFalse(p.isPair(0, 2, 0, 1));
 	}
 }
