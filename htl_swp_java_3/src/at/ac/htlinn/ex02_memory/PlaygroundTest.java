@@ -63,6 +63,27 @@ class PlaygroundTest {
 		{
 			assertEquals(cnt(p,i,sizeX, sizeY),2);
 		}
+		
+		noPairs = 9;
+		sizeX = 4;
+		sizeY = 5;
+		p = new Playground(sizeX, sizeY, noPairs, 2);
+		System.out.println(p);
+		for (int i = 0; i < noPairs;i++)
+		{
+			assertEquals(cnt(p,i,sizeX, sizeY),2);
+		}
+		
+		noPairs = 12;
+		sizeX = 6;
+		sizeY = 5;
+		p = new Playground(sizeX, sizeY, noPairs, 2);
+		System.out.println(p);
+		for (int i = 0; i < noPairs;i++)
+		{
+			assertEquals(cnt(p,i,sizeX, sizeY),2);
+		}
+		
 	}
 
 	@Test

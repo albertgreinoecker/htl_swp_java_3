@@ -64,7 +64,7 @@ public class Playground {
 		
 	}
 	
-	public boolean isPair(int x1, int  y1, int x2, int y2)
+	public boolean isPair(int x1, int y1, int x2, int y2)
 	{
 		Card c1 = get(x1, y1);
 		Card c2 = get(x2, y2);

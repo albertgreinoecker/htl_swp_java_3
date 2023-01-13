@@ -5,7 +5,7 @@ public abstract class Card {
 
 	public Card() {
 	}
-	
+		
 	public Card(boolean visible)
 	{
 		this.visible = visible;
