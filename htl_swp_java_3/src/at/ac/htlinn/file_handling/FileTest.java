@@ -15,7 +15,7 @@ public class FileTest {
 			{
 				System.out.println(indent + "DIR:" + fc.getName());
 				list(fc, indent + "  ");
-;			} else
+			} else
 			{
 				System.out.println(indent + "FILE:" + fc.getName());
 			}
