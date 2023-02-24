@@ -15,6 +15,7 @@ public class FileAttributes {
 
 		BasicFileAttributes attr = Files.readAttributes(f.toPath(), BasicFileAttributes.class);
 		FileTime fileTime = attr.creationTime();
+		
 		System.out.println(fileTime);
 		
 		FileOwnerAttributeView owner = Files.getFileAttributeView(

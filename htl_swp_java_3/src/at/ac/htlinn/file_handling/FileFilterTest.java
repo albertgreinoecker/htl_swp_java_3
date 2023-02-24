@@ -1,6 +1,7 @@
 package at.ac.htlinn.file_handling;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FilenameFilter;
 
 public class FileFilterTest {
@@ -17,7 +18,6 @@ public class FileFilterTest {
 		File f = new File("/tmp");
 		String[] r = f.list(new MyFileNameFilterInner());
 		// String[] r = f.list();
-
 		String[] r2 = f.list(new FilenameFilter() {
 
 			@Override
