@@ -7,15 +7,17 @@ public class RunnableTest {
 		t1.start();
 
 		Runnable runnable = () -> {
-			System.out.println("Also works with lambda");
+			while (true)
+				System.out.println("Also works with lambda");
 		};
 		Thread t2 = new Thread(runnable);
 		t2.start();
 
 		
 		
-		Thread t3 = new Thread(() -> {	
-		   System.out.println("Even shorter Syntax");
+		Thread t3 = new Thread(() -> {
+			while (true)
+				System.out.println("Even shorter Syntax");
 		});
 		t3.start();
 		

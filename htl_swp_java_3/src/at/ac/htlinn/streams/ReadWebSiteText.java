@@ -36,9 +36,9 @@ public class ReadWebSiteText {
 
 	public static void main(String[] args) throws MalformedURLException, IOException {
 		String url = "https://filesamples.com/samples/document/txt/sample3.txt";
-		// readCharByChar(url);
+		 //readCharByChar(url);
 		//readWithBuffer(url);
-		readWithBufferAll(url);
+		//readWithBufferAll(url);
 	}
 
 }

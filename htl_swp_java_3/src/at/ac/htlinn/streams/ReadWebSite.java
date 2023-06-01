@@ -28,7 +28,7 @@ public class ReadWebSite {
 		{
 
 			String nameStr = name.toString();
-			System.out.println(nameStr);
+			//System.out.println(nameStr);
 			String onlyName = name.getElementsByTag("span").text();
 			System.out.println(onlyName);
 		}
