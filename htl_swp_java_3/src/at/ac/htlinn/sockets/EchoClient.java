@@ -1,4 +1,4 @@
-package at.ac.thtlinn.sockets;
+package at.ac.htlinn.sockets;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

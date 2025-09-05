@@ -1,4 +1,4 @@
-package at.ac.thtlinn.various;
+package at.ac.htlinn.various;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;

@@ -1,4 +1,4 @@
-package at.ac.thtlinn.sockets.chat;
+package at.ac.htlinn.sockets.chat;
 
 import java.io.BufferedReader;
 import java.io.IOException;
