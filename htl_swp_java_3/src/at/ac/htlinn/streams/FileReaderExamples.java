@@ -10,9 +10,9 @@ public class FileReaderExamples {
 	static void readCharByChar() throws IOException {
 		FileReader reader = new FileReader("testdata/p1.txt");
 		int i = 0;
-		while ((i = reader.read()) != -1)
+		while ((i = reader.read()) != -1) //lese solange bis Ende der Datei
 		{
-			System.out.println((char)i);
+			System.out.println((char)i); //Uebertrage int in char
 		}
 		reader.close();
 	}
