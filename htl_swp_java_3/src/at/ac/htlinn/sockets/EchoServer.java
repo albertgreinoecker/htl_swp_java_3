@@ -18,12 +18,16 @@ public class EchoServer {
 				Socket s = sock.accept();
 				DataInputStream dis = new DataInputStream(s.getInputStream());
 				String str = (String) dis.readUTF();
-				System.out.println("message= " + str);
-				System.out.println("request:" + noRequests);
+				while (str == null || str.isEmpty()) {
+					str = (String) dis.readUTF();
 
-				out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()));
-				out.write("Echo:" + str + "\n");
-				out.flush();
+					System.out.println("message= " + str);
+					System.out.println("request:" + noRequests);
+
+					out = new PrintWriter(new OutputStreamWriter(s.getOutputStream()));
+					out.write("Echo:" + str + "\n");
+					out.flush();
+				}
 				noRequests++;
 			}
 			out.close();
